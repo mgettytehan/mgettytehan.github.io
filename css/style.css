@@ -1,0 +1,40 @@
+/*import google fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Unica+One&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    font-family: 'Unica One', cursive;
+}
+a {
+    text-decoration: none;
+}
+.main-container {
+    display: flex;
+}
+main {
+    flex: 3 0 0;
+    padding: 15px;
+}
+nav {
+    flex: 1 0 0;
+    padding: 15px;
+    background-color: #091f36;
+}
+.nav-item a {
+    color: white;
+}
+.icons-holder {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icons-holder > * {
+    margin: 5px;
+}
+.link-icon {
+    height: 50px;
+    width: auto;
+}
