@@ -1,5 +1,5 @@
 /*import google fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:500|Roboto&display=swap');
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -8,37 +8,44 @@ body {
     background-color: grey;
 }
 h1, h2, h3, h4 {
-    font-family: 'Unica One', cursive;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
 }
 a {
     text-decoration: none;
 }
-main {
-    padding: 15px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-}
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #091f36;
+    align-items: stretch;
+    background-color: #DEDEDE;
+    border-bottom: 2px solid #33B3A6;
 }
 .collapsing-nav {
     display: flex;
+    align-items: center;
+    padding: 0 5px;
 }
 .nav-item {
-    flex: 1 0 0;
-    margin: 15px 0;
+    margin: 5px 0;
     padding: 5px 15px;
     text-align: center;
 }
-.nav-item a {
-    color: white;
-}
 .nav-item:hover {
-    background-color: goldenrod;
+    border-top: 2px solid #D0D0D0;
+    border-bottom: 2px solid #D0D0D0;
+}
+.nav-item a {
+    color: #33B3A6;
+}
+.hamburger {
+    display: none;
+}
+.hamburger > div {
+    width: 35px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: #33B3A6;
 }
 .icons-holder {
     display: flex;
@@ -49,6 +56,65 @@ nav {
     margin: 5px;
 }
 .link-icon {
-    height: 40px;
+    max-height: 40px;
     width: auto;
+}
+main {
+    padding: 0 0 15px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+main h2 {
+    text-align: center;
+    background-color: #33B3A6;
+    padding: 20px 10px;
+    margin: 10px 0;
+    color: white;
+}
+main p {
+    margin: 15px 20px;
+}
+main a {
+    color: #6f4c7d;
+}
+main a:hover {
+    text-decoration: underline;
+}
+.profile-pic {
+    float: right;
+    width: 25%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30%;
+    padding: 10px;
+}
+.clear {
+    clear: both;
+}
+
+@media (max-width: 450px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        /* min-height to cover hamburger with padding */
+        min-height: 45px;
+    }
+    .hamburger {
+        cursor: pointer;
+        display: block;
+        padding: 5px;
+        position: absolute;
+        align-self: flex-end;
+    }
+    .icons-holder {
+        align-self: flex-start;
+    }
+    .collapsing-nav {
+        flex-direction: column;
+        display: none;
+    }
+    .nav-item {
+        text-align: left;
+    }
 }
