@@ -1,6 +1,9 @@
 /*import google fonts */
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:500|Roboto&display=swap');
-
+/* border-box to all (does not include :before and :after) */
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -19,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: stretch;
     background-color: #DEDEDE;
-    border-bottom: 2px solid #33B3A6;
+    border-bottom: 3px solid #33B3A6;
 }
 .collapsing-nav {
     display: flex;
@@ -59,17 +62,34 @@ nav {
     max-height: 40px;
     width: auto;
 }
-main {
-    padding: 0 0 15px 0;
+.main-container {
     max-width: 800px;
     margin: 0 auto;
+    box-shadow: 3px 0 5px -3px black, -3px 0 5px -3px;
+}
+header {
+    text-align: center;
+    background-color: #6f4c7d;
+    color: white;
+    padding: 20px;
+}
+header h1 {
+    margin: 0;
+}
+main {
+    padding: 0 0 15px 0;
     background-color: white;
+}
+main section {
+    min-height: 50vh;
 }
 main h2 {
     text-align: center;
     background-color: #33B3A6;
+    border-bottom: 3px dashed #D0D0D0;
+    border-top: 3px dashed #D0D0D0;
     padding: 20px 10px;
-    margin: 10px 0;
+    margin: 0 0 20px;
     color: white;
 }
 main p {
@@ -92,6 +112,14 @@ main a:hover {
 .clear {
     clear: both;
 }
+footer {
+    background-color: #DEDEDE;
+    color: #363636;
+    min-height: 40px;
+    padding: 10px;
+    border-top: 3px solid #33B3A6;
+    text-align: right;
+}
 
 @media (max-width: 450px) {
     nav {
@@ -110,11 +138,11 @@ main a:hover {
     .icons-holder {
         align-self: flex-start;
     }
-    .collapsing-nav {
-        flex-direction: column;
+    .collapse-hidden {
         display: none;
     }
-    .nav-item {
-        text-align: left;
+    .collapsing-nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
