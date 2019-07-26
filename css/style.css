@@ -34,12 +34,11 @@ nav {
     padding: 5px 15px;
     text-align: center;
 }
-.nav-item:hover {
-    border-top: 2px solid #D0D0D0;
-    border-bottom: 2px solid #D0D0D0;
-}
 .nav-item a {
     color: #33B3A6;
+}
+.nav-item:hover a {
+    border-bottom: 2px dashed #33B3A6;
 }
 .hamburger {
     display: none;
@@ -99,7 +98,7 @@ main a {
     color: #6f4c7d;
 }
 main a:hover {
-    text-decoration: underline;
+    border-bottom: 2px dashed #6f4c7d;
 }
 .profile-pic {
     float: right;
