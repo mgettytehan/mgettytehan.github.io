@@ -107,7 +107,8 @@ main a:hover {
     min-width: 150px;
     height: auto;
     border-radius: 30%;
-    padding: 10px;
+    border: 3px dashed #6f4c7d;
+    margin: 10px;
 }
 .clear {
     clear: both;
