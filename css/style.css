@@ -24,6 +24,10 @@ nav {
     background-color: #DEDEDE;
     border-bottom: 3px solid #33B3A6;
 }
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
 .collapsing-nav {
     display: flex;
     align-items: center;
@@ -112,6 +116,20 @@ main a:hover {
 }
 .clear {
     clear: both;
+}
+.project-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-around;
+    justify-content: space-around;
+    margin: 10px;
+}
+.project h3 {
+    text-align: center;
+}
+.project-links {
+    text-align: center;
 }
 footer {
     background-color: #DEDEDE;
