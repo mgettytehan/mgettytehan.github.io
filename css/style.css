@@ -4,6 +4,9 @@
 * {
     box-sizing: border-box;
 }
+/* html {
+    scroll-behavior: smooth;
+} */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -22,7 +25,7 @@ nav {
     justify-content: space-between;
     align-items: stretch;
     background-color: #DEDEDE;
-    border-bottom: 3px solid #33B3A6;
+    border-bottom: 3px solid #6f4c7d;
 }
 .responsive-image {
     width: 100%;
@@ -39,10 +42,10 @@ nav {
     text-align: center;
 }
 .nav-item a {
-    color: #33B3A6;
+    color: #6f4c7d;
 }
 .nav-item:hover a {
-    border-bottom: 2px dashed #33B3A6;
+    border-bottom: 2px dashed #6f4c7d;
 }
 .hamburger {
     display: none;
@@ -51,7 +54,7 @@ nav {
     width: 35px;
     height: 5px;
     margin: 5px 0;
-    background-color: #33B3A6;
+    background-color: #6f4c7d;
 }
 .icons-holder {
     display: flex;
@@ -72,7 +75,7 @@ nav {
 }
 header {
     text-align: center;
-    background-color: #6f4c7d;
+    background-color: black;
     color: white;
     padding: 20px;
 }
@@ -83,12 +86,9 @@ main {
     padding: 0 0 15px 0;
     background-color: white;
 }
-main section {
-    min-height: 50vh;
-}
 main h2 {
     text-align: center;
-    background-color: #33B3A6;
+    background-color: #6f4c7d;
     border-bottom: 3px dashed #D0D0D0;
     border-top: 3px dashed #D0D0D0;
     padding: 20px 10px;
@@ -104,6 +104,9 @@ main a {
 main a:hover {
     border-bottom: 2px dashed #6f4c7d;
 }
+h3 {
+    margin: 20px;
+}
 .profile-pic {
     float: right;
     width: 25%;
@@ -111,7 +114,7 @@ main a:hover {
     min-width: 150px;
     height: auto;
     border-radius: 30%;
-    border: 3px dashed #6f4c7d;
+    border: 3px dashed grey;
     margin: 10px;
 }
 .clear {
@@ -123,6 +126,7 @@ main a:hover {
     grid-template-columns: 1fr 1fr;
     align-content: space-around;
     justify-content: space-around;
+    align-items: center;
     margin: 10px;
 }
 .project h3 {
@@ -131,12 +135,16 @@ main a:hover {
 .project-links {
     text-align: center;
 }
+.top {
+    text-align: right;
+    padding: 10px;
+}
 footer {
     background-color: #DEDEDE;
     color: #363636;
     min-height: 40px;
     padding: 10px;
-    border-top: 3px solid #33B3A6;
+    border-top: 3px solid #6f4c7d;
     text-align: right;
 }
 
@@ -164,5 +172,8 @@ footer {
         flex-direction: column;
         align-items: flex-end;
         align-self: flex-end;
+    }
+    .project-container {
+        display: block;
     }
 }

@@ -1,5 +1,12 @@
-let collapsingNav = $(".collapsing-nav");
+function scrollTo() {
+    event.preventDefault();
+    $('html,body').animate({scrollTop: $(this.hash).offset().top},400);
+}
 
-$ (".hamburger").on("click", ()  => {
-    collapsingNav.toggleClass("collapse-hidden");
+$(".nav-item > a").on("click", scrollTo);
+
+$(".top > a").on("click", scrollTo);
+
+$(".hamburger").on("click", ()  => {
+    $(".collapsing-nav").toggleClass("collapse-hidden");
 });
