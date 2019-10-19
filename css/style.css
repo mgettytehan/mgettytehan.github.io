@@ -75,8 +75,8 @@ nav {
 }
 header {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #6f4c7d;
     padding: 20px;
 }
 header h1 {
@@ -148,7 +148,7 @@ footer {
     text-align: right;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
