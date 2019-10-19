@@ -23,8 +23,10 @@ $(".top > a").on("click", scrollTo);
 $('.project-image').on('click', function() {
     $('body').append(makeModal($(this).attr('src')));
     $('.modal').animate({opacity: 1});
+    $('body').addClass('modal-open');
     $('.overlay').on('click', function() {
         $('.modal').animate({opacity: 0}, {done:destroyModal});
+        $('body').removeClass('modal-open');
     })
 });
 
