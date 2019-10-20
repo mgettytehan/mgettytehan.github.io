@@ -158,6 +158,9 @@ h3 {
 .project-links {
     text-align: center;
 }
+.project-image {
+    cursor: pointer;
+}
 .top {
     text-align: right;
     padding: 10px;
