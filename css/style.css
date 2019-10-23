@@ -1,5 +1,5 @@
 /*import google fonts */
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:500|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 /* border-box to all (does not include :before and :after) */
 * {
     box-sizing: border-box;
@@ -16,9 +16,11 @@ body {
 body.modal-open {
     overflow: hidden;
 }
-h1, h2, h3, h4 {
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 500;
+h1, h2 {
+    letter-spacing: 2px;
+}
+h3, h4 {
+    letter-spacing: 1px;
 }
 a {
     text-decoration: none;
