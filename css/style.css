@@ -30,7 +30,7 @@ nav {
     justify-content: space-between;
     align-items: stretch;
     background-color: #DEDEDE;
-    border-bottom: 3px solid #6f4c7d;
+    border-bottom: 3px solid #5c2273;
 }
 .responsive-image {
     max-width: 100%;
@@ -48,10 +48,10 @@ nav {
     text-align: center;
 }
 .nav-item a {
-    color: #6f4c7d;
+    color: #5c2273;
 }
 .nav-item:hover a {
-    border-bottom: 2px solid #6f4c7d;
+    border-bottom: 2px solid #5c2273;
 }
 .hamburger {
     display: none;
@@ -60,7 +60,7 @@ nav {
     width: 35px;
     height: 5px;
     margin: 5px 0;
-    background-color: #6f4c7d;
+    background-color: #5c2273;
 }
 .icons-holder {
     display: flex;
@@ -82,7 +82,7 @@ nav {
 header {
     text-align: center;
     background-color: white;
-    color: #6f4c7d;
+    color: #5c2273;
     padding: 20px;
 }
 header h1 {
@@ -94,7 +94,7 @@ main {
 }
 main h2 {
     text-align: center;
-    background-color: #6f4c7d;
+    background-color: #5c2273;
     border-bottom: 3px solid #D0D0D0;
     border-top: 3px solid #D0D0D0;
     padding: 20px 10px;
@@ -105,10 +105,10 @@ main p {
     margin: 15px 20px;
 }
 main a {
-    color: #6f4c7d;
+    color: #5c2273;
 }
 main a:hover {
-    border-bottom: 2px solid #6f4c7d;
+    border-bottom: 2px solid #5c2273;
 }
 h3 {
     margin: 20px;
@@ -172,7 +172,7 @@ footer {
     color: #363636;
     min-height: 40px;
     padding: 10px;
-    border-top: 3px solid #6f4c7d;
+    border-top: 3px solid #5c2273;
     text-align: right;
 }
 

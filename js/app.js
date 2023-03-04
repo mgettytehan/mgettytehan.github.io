@@ -1,9 +1,12 @@
-function scrollTo() {
-    event.preventDefault();
-    $('html,body').animate({scrollTop: $(this.hash).offset().top},400);
+//smooth automatic scroll
+scrollTo = e => {
+    console.log(e);
+    console.log(this);
+    e.preventDefault();
+    $('html,body').animate({scrollTop: $(e.target.hash).offset().top},400);
 }
 
-function makeModal(image) {
+const makeModal = image => {
     return $('<div class="overlay"></div>')
         .append($('<div class="modal"></div>')
             .append($(`<img src=${image} />`)
@@ -12,7 +15,7 @@ function makeModal(image) {
         );
 }
 
-function destroyModal() {
+const destroyModal = () => {
     $('.overlay').remove();
 }
 
